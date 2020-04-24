@@ -1,0 +1,48 @@
+{
+  "name": "week3-friday",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "serve": "npm run build && node dist",
+    "dev": "nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "nodemonConfig": {
+    "watch": [
+      "src/*"
+    ],
+    "ext": "ts",
+    "ignore": [
+      "**/*.spec.ts",
+      ".env"
+    ],
+    "exec": "ts-node ./src"
+  },
+  "devDependencies": {
+    "@prisma/cli": "^2.0.0-beta.3",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.6",
+    "@types/jest": "^24.9.1",
+    "@types/node": "^13.13.2",
+    "@types/supertest": "^2.0.8",
+    "jest": "^24.9.0",
+    "nodemon": "^2.0.3",
+    "supertest": "^4.0.2",
+    "ts-jest": "^24.3.0",
+    "ts-node": "^8.9.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^2.0.0-beta.3",
+    "class-transformer": "^0.2.3",
+    "class-validator": "^0.12.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "reflect-metadata": "^0.1.13",
+    "routing-controllers": "^0.8.1"
+  }
+}
